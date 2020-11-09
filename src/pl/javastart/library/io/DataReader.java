@@ -28,4 +28,10 @@ public class DataReader {
         sc.nextLine();
         return new Book(title, authir, releaseDate,pages, publisher, ISBN);
     }
+
+    public int getInt(){
+        int number = sc.nextInt();
+        sc.nextLine();
+        return number;
+    }
 }
