@@ -2,12 +2,12 @@ package pl.javastart.library.model;
 
 public class Library {
 
-    private final int maxBooks = 1000;
-    private Book[] books = new Book[maxBooks];
+    private static final int MAX_BOOKS = 1000;
+    private Book[] books = new Book[MAX_BOOKS];
     private int bookNumber = 0;
 
     public void addBook(Book book){
-        if(bookNumber < maxBooks){
+        if(bookNumber < MAX_BOOKS){
             books[bookNumber] = book;
             bookNumber++;
         } else {
